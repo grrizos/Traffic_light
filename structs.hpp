@@ -14,6 +14,7 @@ struct Person {
 
 struct Car {
     std::string Type = "IX";
+    int distance = 0;
     float waiting_time = 0;   // time the car is waiting at the light
 
     void displayInfo();
