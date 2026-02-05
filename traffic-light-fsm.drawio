@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.7">
   <diagram name="Page-1" id="C1HBSJF0L-Q7x_DJwGpH">
-    <mxGraphModel dx="2276" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#0D0B12)" math="0" shadow="0">
+    <mxGraphModel dx="2276" dy="1899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#0D0B12)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -135,7 +135,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KcKpdxhyBzfvZl8k6aL1-7" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="RACE CONDITION" vertex="1">
-          <mxGeometry height="210" width="200" x="820" y="380" as="geometry" />
+          <mxGeometry height="210" width="200" x="570" y="-60" as="geometry" />
         </mxCell>
         <mxCell id="KcKpdxhyBzfvZl8k6aL1-6" parent="KcKpdxhyBzfvZl8k6aL1-7" style="text;html=1;whiteSpace=wrap;strokeColor=#005700;fillColor=#008a00;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="CAR ON VEIN&amp;nbsp;" vertex="1">
           <mxGeometry height="30" width="200" y="30" as="geometry" />
@@ -143,8 +143,11 @@
         <mxCell id="KcKpdxhyBzfvZl8k6aL1-9" parent="KcKpdxhyBzfvZl8k6aL1-7" style="text;html=1;whiteSpace=wrap;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="PED ON MAIN" vertex="1">
           <mxGeometry height="30" width="200" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="KcKpdxhyBzfvZl8k6aL1-10" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;SCENARIO&lt;/h1&gt;&lt;p&gt;The main street is a 3 lane highway one direction, and the vein are street which try to get into the highway&lt;/p&gt;&lt;p&gt;Highway car cannot go into the vein streets, vein streets are one way.&lt;/p&gt;&lt;p&gt;So main road, always green light and pedestrian light for vein street also green light, only change these if something changes based on sensors&lt;/p&gt;" vertex="1">
-          <mxGeometry height="270" width="210" x="820" y="40" as="geometry" />
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-10" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;SCENARIO&lt;/h1&gt;&lt;p&gt;The main street is a 3 lane highway one direction, and the vein are street which try to get into the highway&lt;/p&gt;&lt;p&gt;Highway car cannot go into the vein streets, vein streets are one way.&lt;/p&gt;&lt;p&gt;So main road, always green light and pedestrian light for vein street also green light, only change these if something changes based on sensors&lt;/p&gt;" vertex="1">
+          <mxGeometry height="270" width="210" x="840" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-13" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&amp;nbsp;Notes&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Every transision from green to red , has a yellow state which for simplicity is not shown here&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="200" width="320" x="830" y="350" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
