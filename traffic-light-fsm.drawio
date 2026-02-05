@@ -4,6 +4,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="IzMV6Qe7UqRfKqiYSCHK-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=1 2;strokeColor=light-dark(#000000,#660033);strokeWidth=5;" value="" vertex="1">
+          <mxGeometry height="450" width="160" y="110" as="geometry" />
+        </mxCell>
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-5" edge="1" parent="1" source="7oGPr51TRHdTjLGsJcky-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="IzMV6Qe7UqRfKqiYSCHK-4" value="CAR ON VEIN&amp;nbsp;&lt;div&gt;1&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint as="offset" />
@@ -16,7 +19,18 @@
         </mxCell>
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-16" edge="1" parent="1" source="7oGPr51TRHdTjLGsJcky-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
           <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="190" />
+            </Array>
             <mxPoint x="60" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-1" edge="1" parent="1" source="7oGPr51TRHdTjLGsJcky-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="IzMV6Qe7UqRfKqiYSCHK-1" value="PED ON MAIN&lt;div&gt;1&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="150" />
+              <mxPoint x="500" y="150" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="7oGPr51TRHdTjLGsJcky-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rotation=0;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="MAIN GL" vertex="1">
@@ -43,6 +57,15 @@
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-27" edge="1" parent="1" source="7oGPr51TRHdTjLGsJcky-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="IzMV6Qe7UqRfKqiYSCHK-3" value="CAR ON VEIN 3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-4" edge="1" parent="1" source="7oGPr51TRHdTjLGsJcky-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="IzMV6Qe7UqRfKqiYSCHK-3" value="PED ON MAIN&lt;div&gt;3&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="530" />
+              <mxPoint x="520" y="530" />
+              <mxPoint x="520" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="7oGPr51TRHdTjLGsJcky-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="MAIN PD GL" vertex="1">
           <mxGeometry height="80" width="80" x="630" y="380" as="geometry" />
         </mxCell>
@@ -55,19 +78,20 @@
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-28" edge="1" parent="1" source="IzMV6Qe7UqRfKqiYSCHK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="IzMV6Qe7UqRfKqiYSCHK-2" value="CAR ON VEIN 3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-5" edge="1" parent="1" source="IzMV6Qe7UqRfKqiYSCHK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="7oGPr51TRHdTjLGsJcky-1" value="PED ON MAIN&lt;div&gt;4&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="580" />
+              <mxPoint x="-30" y="580" />
+              <mxPoint x="-30" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" value="MAIN PD RL" vertex="1">
           <mxGeometry height="80" width="80" x="460" y="380" as="geometry" />
         </mxCell>
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-20" edge="1" parent="1" source="IzMV6Qe7UqRfKqiYSCHK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="IzMV6Qe7UqRfKqiYSCHK-1" value="CAR ON VEIN&lt;div&gt;1&lt;/div&gt;">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IzMV6Qe7UqRfKqiYSCHK-38" edge="1" parent="1" source="IzMV6Qe7UqRfKqiYSCHK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7oGPr51TRHdTjLGsJcky-4" value="PED ON VEIN">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="310" y="140" />
-              <mxPoint x="670" y="140" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="VEIN PD RL" vertex="1">
           <mxGeometry height="80" width="80" x="270" y="210" as="geometry" />
@@ -79,8 +103,8 @@
           <mxGeometry height="80" width="80" x="270" y="380" as="geometry" />
         </mxCell>
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.325;entryDx=0;entryDy=0;entryPerimeter=0;" target="7oGPr51TRHdTjLGsJcky-1" value="nothing happens&lt;div&gt;&lt;br&gt;&lt;/div&gt;">
-          <mxGeometry height="50" relative="1" width="50" x="-1" y="-22" as="geometry">
-            <mxPoint x="6" y="-4" as="offset" />
+          <mxGeometry height="50" relative="1" width="50" x="-0.1254" y="-42" as="geometry">
+            <mxPoint x="-1" as="offset" />
             <Array as="points">
               <mxPoint x="20" y="230" />
             </Array>
@@ -97,11 +121,30 @@
             <mxPoint x="670" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IzMV6Qe7UqRfKqiYSCHK-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=1 2;strokeColor=light-dark(#000000,#660033);strokeWidth=5;" value="" vertex="1">
-          <mxGeometry height="450" width="160" y="110" as="geometry" />
-        </mxCell>
         <mxCell id="IzMV6Qe7UqRfKqiYSCHK-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#001DBC;fillColor=#0050ef;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="STABLE STATE" vertex="1">
           <mxGeometry height="40" width="110" x="25" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-3" edge="1" parent="1" source="IzMV6Qe7UqRfKqiYSCHK-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.125;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" target="7oGPr51TRHdTjLGsJcky-6" value="PED ON MAIN&lt;div&gt;2&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.12" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="500" y="320" />
+              <mxPoint x="620" y="320" />
+              <mxPoint x="620" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-7" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="RACE CONDITION" vertex="1">
+          <mxGeometry height="210" width="200" x="820" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-6" parent="KcKpdxhyBzfvZl8k6aL1-7" style="text;html=1;whiteSpace=wrap;strokeColor=#005700;fillColor=#008a00;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="CAR ON VEIN&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-9" parent="KcKpdxhyBzfvZl8k6aL1-7" style="text;html=1;whiteSpace=wrap;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="PED ON MAIN" vertex="1">
+          <mxGeometry height="30" width="200" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KcKpdxhyBzfvZl8k6aL1-10" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;SCENARIO&lt;/h1&gt;&lt;p&gt;The main street is a 3 lane highway one direction, and the vein are street which try to get into the highway&lt;/p&gt;&lt;p&gt;Highway car cannot go into the vein streets, vein streets are one way.&lt;/p&gt;&lt;p&gt;So main road, always green light and pedestrian light for vein street also green light, only change these if something changes based on sensors&lt;/p&gt;" vertex="1">
+          <mxGeometry height="270" width="210" x="820" y="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
