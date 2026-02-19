@@ -18,6 +18,7 @@ struct Car {
     float waiting_time = 0;   // time the car is waiting at the light
 
     void displayInfo();
+    int get_distance();
 };
 
 struct Light {
@@ -25,6 +26,11 @@ struct Light {
     int ped_light_state = 0;
     bool has_pedestrian = 0;
     bool has_car = 0;
+
+    int set_car_light_state(std::string state);
+    int set_ped_light_state(std::string state);
+    int set_ped_light();
+    int set_car_light();
 };
 
 #endif // STRUCTS_HPP
