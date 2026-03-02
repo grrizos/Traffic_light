@@ -33,11 +33,12 @@ bool get_cars(Car car)
     car.distance = car.get_distance();
     if (car.distance < 50)
     {
-        car_detected = true
+        car_detected = true;
         std::cout << "Car detected in vein street!" << std::endl; 
         return true;
     }
-     return false;
+    car_detected = false;
+    return false;
 }
 
 bool get_pedestrian(Person NPC)
@@ -50,29 +51,10 @@ bool get_pedestrian(Person NPC)
         return true;
     }
     }
+    pedestrian_waiting = false;
     return false;
 }
 
-//HERE WE HAVE THE FUNCITONS FOR EACH STATE OF THE FSM
-void vein_pd_rd(){
-        // First lets make everylight notify driver of incoming change via the use of orange light
-    // and make pedestrian lights all red since cars from vein cross every crosswalk
-    int i =0;
-    int time_now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now()) % 60; //change how we handle timing
-
-    for (i=time_now; i<=time_now + 5; i++){
-        std::cout << "Drivers are getting notified for change and time remaninig :" << i << std::endl;
-        light_main1.set_car_light_state("yellow");
-        light_vein1.set_car_light_state("yellow");     ///here we add the gpio commands to set the lights
-        light_main2.set_car_light_state("yellow");
-        light_vein2.set_car_light_state("yellow");
-        light_main1.set_ped_light_state("red");
-        light_vein1.set_ped_light_state("red");     
-        light_main2.set_ped_light_state("red");
-        light_vein2.set_ped_light_state("red");
-    }
-    return ;
-}
 void car_on_vein(){
     // This is function changes the behaviour of the traffic lights to
     // enable cars in vein street to enter the highway
@@ -99,13 +81,35 @@ void car_on_vein(){
     //then we go back to the normal state of things
     return;
 }
+//HERE WE HAVE THE FUNCITONS FOR EACH STATE OF THE FSM
+// VEIN_PD_RL
+void vein_pd_rd(){
+        // First lets make everylight notify driver of incoming change via the use of orange light
+    // and make pedestrian lights all red since cars from vein cross every crosswalk
+    int i =0;
+    int time_now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now()) % 60; //change how we handle timing
 
+    for (i=time_now; i<=time_now + 5; i++){
+        std::cout << "Drivers are getting notified for change and time remaninig :" << i << std::endl;
+        light_main1.set_car_light_state("yellow");
+        light_vein1.set_car_light_state("yellow");     ///here we add the gpio commands to set the lights
+        light_main2.set_car_light_state("yellow");
+        light_vein2.set_car_light_state("yellow");
+        light_main1.set_ped_light_state("red");
+        light_vein1.set_ped_light_state("red");     
+        light_main2.set_ped_light_state("red");
+        light_vein2.set_ped_light_state("red");
+    }
+    return ;
+}
+
+// MAIN_RD
 void main_rd(){
     light_main2.set_car_light_state("red");
     light_main1.set_car_light_state("red");
     return ;
 }
-
+// VEIN_GL
 void vein_gl(){
     int i =0;
     int time_now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now()) % 60; //change how we handle timing
@@ -116,7 +120,7 @@ void vein_gl(){
     }
     return;
 }
-
+// VEIN_RL
 void vein_rl(){
     int i =0;
     int time_now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now()) % 60; //change how we handle timing
@@ -128,7 +132,7 @@ void vein_rl(){
     light_vein2.set_car_light_state("red");
     return;
 }
-
+// MAIN_PD_GL
 void main_pd_gl(){
     int i =0;
     int time_now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now()) % 60; //change how we handle timing
@@ -139,12 +143,19 @@ void main_pd_gl(){
     }
     return;
 }
-
+// MAIN_PD_RL
 void main_pd_rd(){
     
     std::cout << "Pedestrian lights red on for main road time remaining:" << i << std::endl;
     light_main1.set_ped_light_state("red");
     light_main2.set_ped_light_state("red");
+    return;
+}
+void vein_pd_gl(){
+
+    std::cout << "Pedestrian lights now on for vein road time remaining:" << i << std::endl;
+    light_vein1.set_ped_light_state("green");
+    light_vein2.set_ped_light_state("green");
     return;
 }
 
@@ -200,9 +211,13 @@ int main() {
             if (car_detected == true){
                 current_state = VEIN_GL
             }
-            if (pedestrian_waiting == true){
+            if (pedestrian_waiting == true && car_detected == false){
                 current_state = MAIN_PD_GL
             }
+            break;
+        case VEIN_GL
+            vein_gl();
+            current_state = VEIN_RL
             break;
         case VEIN_RL
             vein_rl();
@@ -217,7 +232,14 @@ int main() {
             break;
         case MAIN_PD_RL
             main_pd_rl();
-            current_state = MAIN_GL
+            current_state = VEIN_GL;
+            break;
+        case VEIN_PD_GL
+            vein_pd_gl();
+            current_state = MAIN_GL;
+            break;
+        default:
+            break;
 
         std::this_thread::sleep_for(std::chrono::milliseconds(100));  // Prevent CPU thrashing
     }

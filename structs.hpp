@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <string>
-#include <structs.cpp>
 
 struct Person {
     std::string name = "Bob";
